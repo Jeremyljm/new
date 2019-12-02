@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+
+1.CrawlSpider
+需要使用LinkExtractor和Rule  这两个东西决定爬虫 的具体走向
+>1.allow设置规则的方法:要能够限制在外面想要的url上面.不要跟其他的url产生相同的正则表达式即可
+>2.什么情况下可以使用follow: 如果在爬取页面的时候,需要将满足条件的url再进行跟进,那么就设置为True,否则设置为False
+>3.什么情况下该指定callback:如果这个url对应的页面只是为了获取更多的url,并不需要里面的数据,那么可以不指定callback,如果想要获取url对应页面中的数据,那么就需要指定一个callback
+
+2.Scrapy Shell
+>1.可以方便我们做一些数据提取的测试码
+>2.如果想要执行scrapy命令，肯定要先进入到scrapy所在的环境中
+>3.如果想要读取某个项目的配置信息，那么应该先进入这个项目中，再执行scrapy shell命令
